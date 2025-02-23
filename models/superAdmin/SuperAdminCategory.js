@@ -1,7 +1,13 @@
 const mongoose = require('mongoose');
 
 const superAdminCategorySchema = new mongoose.Schema({
-  AssetName: { type: String, required: true },
+
+  CategoryType: {
+    Tangible: { AssetName: { type: String } },
+    InTangible: { AssetName: { type: String } },
+  },
+
+  
   
 }, { timestamps: true });
 
