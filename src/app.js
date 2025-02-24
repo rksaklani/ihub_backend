@@ -9,8 +9,8 @@ const superAdminCategoryRoutes = require('./routes/superAdmin/superAdminCategory
 const authRoutes= require('./routes/auth/authRoutes');
 const cors = require("cors");
 
-dotenv.config({ path: './config/config.env' });
-
+// dotenv.config({ path: './config/config.env' });
+require('dotenv').config({ path: __dirname + '/config/config.env' });
 
 const app = express();
 
