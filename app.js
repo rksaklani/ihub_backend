@@ -3,10 +3,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
-const adminProductRoutes = require('./routes/admin/adminProductRoutes');
-const superAdminProductRoutes = require('./routes/superAdmin/superAdminProductRoutes');
-const superAdminCategoryRoutes = require('./routes/superAdmin/superAdminCategoryRoutes');
-const authRoutes= require('./routes/auth/authRoutes');
+const adminProductRoutes = require('./src/routes/admin/adminProductRoutes');
+const superAdminProductRoutes = require('./src/routes/superAdmin/superAdminProductRoutes');
+const superAdminCategoryRoutes = require('./src/routes/superAdmin/superAdminCategoryRoutes');
+const authRoutes= require('./src/routes/auth/authRoutes');
 const cors = require("cors");
 
 // dotenv.config({ path: './config/config.env' });
